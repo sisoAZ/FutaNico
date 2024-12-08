@@ -118,7 +118,7 @@ def run(url, start_date=None, end_date=None, delay=-3, output=None):
     title = "futaba"
     for u in url:
         html_response = requests.get(u)
-        html_response.encoding = html_response.apparent_encoding
+        #html_response.encoding = html_response.apparent_encoding
         html = html_response.text
 
         if title == "futaba":
